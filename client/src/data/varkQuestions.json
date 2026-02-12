@@ -1,0 +1,434 @@
+{
+  "domains": [
+    {
+      "id": "information_processing",
+      "name": "Information Processing",
+      "description": "How you prefer to receive and process new information",
+      "weight": 1.0,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "When learning about a new concept in class, you prefer:",
+          "options": [
+            {
+              "text": "Seeing diagrams, charts, or visual representations of the concept",
+              "style": "visual",
+              "icon": "eye"
+            },
+            {
+              "text": "Listening to the teacher explain it and discussing it with others",
+              "style": "auditory",
+              "icon": "ear"
+            },
+            {
+              "text": "Reading detailed notes or textbook explanations about it",
+              "style": "reading_writing",
+              "icon": "book"
+            },
+            {
+              "text": "Trying hands-on examples or experiments to understand it",
+              "style": "kinesthetic",
+              "icon": "hand"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "question": "You remember information best when:",
+          "options": [
+            {
+              "text": "You can picture it in your mind with images or mental maps",
+              "style": "visual",
+              "icon": "brain"
+            },
+            {
+              "text": "You've heard it explained or discussed it out loud",
+              "style": "auditory",
+              "icon": "volume"
+            },
+            {
+              "text": "You've written it down in your own words or taken detailed notes",
+              "style": "reading_writing",
+              "icon": "pencil"
+            },
+            {
+              "text": "You've practiced it or applied it in a real situation",
+              "style": "kinesthetic",
+              "icon": "target"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "question": "When encountering complex information, you find it easier to understand through:",
+          "options": [
+            {
+              "text": "Flowcharts, infographics, or video demonstrations",
+              "style": "visual",
+              "icon": "monitor"
+            },
+            {
+              "text": "Podcasts, lectures, or verbal explanations",
+              "style": "auditory",
+              "icon": "headphones"
+            },
+            {
+              "text": "Articles, books, or written step-by-step instructions",
+              "style": "reading_writing",
+              "icon": "file-text"
+            },
+            {
+              "text": "Interactive simulations, labs, or real-world practice",
+              "style": "kinesthetic",
+              "icon": "play"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "problem_solving",
+      "name": "Problem Solving",
+      "description": "How you approach solving difficult problems",
+      "weight": 1.2,
+      "questions": [
+        {
+          "id": "q4",
+          "question": "When faced with a challenging problem, your first instinct is to:",
+          "options": [
+            {
+              "text": "Draw it out or create a visual model of the problem",
+              "style": "visual",
+              "icon": "pen-tool"
+            },
+            {
+              "text": "Talk it through with someone or explain it aloud to yourself",
+              "style": "auditory",
+              "icon": "message-circle"
+            },
+            {
+              "text": "Write out the problem and list possible solutions",
+              "style": "reading_writing",
+              "icon": "list"
+            },
+            {
+              "text": "Try different approaches hands-on until something works",
+              "style": "kinesthetic",
+              "icon": "zap"
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "question": "You verify your understanding of a solution by:",
+          "options": [
+            {
+              "text": "Looking at examples and comparing patterns visually",
+              "style": "visual",
+              "icon": "git-compare"
+            },
+            {
+              "text": "Discussing your reasoning and getting verbal feedback",
+              "style": "auditory",
+              "icon": "users"
+            },
+            {
+              "text": "Writing out your logic step-by-step to check for errors",
+              "style": "reading_writing",
+              "icon": "check-square"
+            },
+            {
+              "text": "Testing it in practice to see if it actually works",
+              "style": "kinesthetic",
+              "icon": "shield-check"
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "question": "When learning a new procedure or process, you prefer to:",
+          "options": [
+            {
+              "text": "Watch a demonstration or see a visual guide",
+              "style": "visual",
+              "icon": "video"
+            },
+            {
+              "text": "Have someone walk you through it verbally",
+              "style": "auditory",
+              "icon": "mic"
+            },
+            {
+              "text": "Read the instructions carefully before starting",
+              "style": "reading_writing",
+              "icon": "book-open"
+            },
+            {
+              "text": "Jump in and figure it out by doing it yourself",
+              "style": "kinesthetic",
+              "icon": "activity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collaboration_communication",
+      "name": "Collaboration & Communication",
+      "description": "How you work and communicate with others",
+      "weight": 1.0,
+      "questions": [
+        {
+          "id": "q7",
+          "question": "When explaining a concept to someone else, you naturally:",
+          "options": [
+            {
+              "text": "Draw diagrams or show them visual examples",
+              "style": "visual",
+              "icon": "layout"
+            },
+            {
+              "text": "Explain it verbally with detailed descriptions",
+              "style": "auditory",
+              "icon": "radio"
+            },
+            {
+              "text": "Write it out or share written resources with them",
+              "style": "reading_writing",
+              "icon": "edit"
+            },
+            {
+              "text": "Demonstrate it through actions or examples they can try",
+              "style": "kinesthetic",
+              "icon": "move"
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "question": "In group projects, you contribute best by:",
+          "options": [
+            {
+              "text": "Creating visual presentations, designs, or diagrams",
+              "style": "visual",
+              "icon": "image"
+            },
+            {
+              "text": "Leading discussions and brainstorming sessions",
+              "style": "auditory",
+              "icon": "phone"
+            },
+            {
+              "text": "Researching and writing reports or documentation",
+              "style": "reading_writing",
+              "icon": "file"
+            },
+            {
+              "text": "Building prototypes or doing hands-on implementation work",
+              "style": "kinesthetic",
+              "icon": "tool"
+            }
+          ]
+        },
+        {
+          "id": "q9",
+          "question": "You prefer to receive feedback through:",
+          "options": [
+            {
+              "text": "Highlighted documents or visual annotations",
+              "style": "visual",
+              "icon": "eye"
+            },
+            {
+              "text": "One-on-one conversations or voice notes",
+              "style": "auditory",
+              "icon": "message-square"
+            },
+            {
+              "text": "Written comments or detailed written critiques",
+              "style": "reading_writing",
+              "icon": "align-left"
+            },
+            {
+              "text": "Guided practice sessions where you can improve by doing",
+              "style": "kinesthetic",
+              "icon": "repeat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study_review",
+      "name": "Study & Review",
+      "description": "How you prepare for assessments and review material",
+      "weight": 1.1,
+      "questions": [
+        {
+          "id": "q10",
+          "question": "When studying for an exam, you find it most helpful to:",
+          "options": [
+            {
+              "text": "Create mind maps, color-coded notes, or study graphics",
+              "style": "visual",
+              "icon": "git-branch"
+            },
+            {
+              "text": "Record yourself or listen to study materials/discussions",
+              "style": "auditory",
+              "icon": "voicemail"
+            },
+            {
+              "text": "Rewrite notes, make outlines, and read through materials multiple times",
+              "style": "reading_writing",
+              "icon": "layers"
+            },
+            {
+              "text": "Practice problems, create flashcards, and quiz yourself actively",
+              "style": "kinesthetic",
+              "icon": "clipboard"
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "question": "You organize your study materials by:",
+          "options": [
+            {
+              "text": "Using color coding, visual folders, or diagram-based systems",
+              "style": "visual",
+              "icon": "folder"
+            },
+            {
+              "text": "Recording notes by topic to listen back to later",
+              "style": "auditory",
+              "icon": "disc"
+            },
+            {
+              "text": "Creating detailed written indexes or organized note documents",
+              "style": "reading_writing",
+              "icon": "archive"
+            },
+            {
+              "text": "Grouping by practice exercises or hands-on activities",
+              "style": "kinesthetic",
+              "icon": "package"
+            }
+          ]
+        },
+        {
+          "id": "q12",
+          "question": "Before a test, you review most effectively by:",
+          "options": [
+            {
+              "text": "Looking over visual summaries, charts, and highlighted materials",
+              "style": "visual",
+              "icon": "bar-chart"
+            },
+            {
+              "text": "Discussing the material with study partners or teaching it aloud",
+              "style": "auditory",
+              "icon": "user-plus"
+            },
+            {
+              "text": "Re-reading your notes and creating summary sheets",
+              "style": "reading_writing",
+              "icon": "file-text"
+            },
+            {
+              "text": "Working through practice problems and sample questions",
+              "style": "kinesthetic",
+              "icon": "trending-up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "application_practice",
+      "name": "Application & Practice",
+      "description": "How you apply knowledge and practice skills",
+      "weight": 1.2,
+      "questions": [
+        {
+          "id": "q13",
+          "question": "When learning a new skill, you master it best by:",
+          "options": [
+            {
+              "text": "Watching tutorials and observing skilled demonstrations",
+              "style": "visual",
+              "icon": "youtube"
+            },
+            {
+              "text": "Having someone coach you through it with verbal guidance",
+              "style": "auditory",
+              "icon": "user-check"
+            },
+            {
+              "text": "Following written guides and studying technique descriptions",
+              "style": "reading_writing",
+              "icon": "scroll"
+            },
+            {
+              "text": "Practicing repeatedly through trial and error",
+              "style": "kinesthetic",
+              "icon": "refresh-cw"
+            }
+          ]
+        },
+        {
+          "id": "q14",
+          "question": "You test your knowledge by:",
+          "options": [
+            {
+              "text": "Creating visual summaries or concept maps to see connections",
+              "style": "visual",
+              "icon": "share-2"
+            },
+            {
+              "text": "Explaining concepts out loud or teaching them to someone",
+              "style": "auditory",
+              "icon": "speaker"
+            },
+            {
+              "text": "Writing practice essays or answering written questions",
+              "style": "reading_writing",
+              "icon": "edit-3"
+            },
+            {
+              "text": "Applying concepts in real scenarios or simulations",
+              "style": "kinesthetic",
+              "icon": "navigation"
+            }
+          ]
+        },
+        {
+          "id": "q15",
+          "question": "When facing a practical task you haven't done before, you prefer to:",
+          "options": [
+            {
+              "text": "Look at pictures or diagrams of the finished result first",
+              "style": "visual",
+              "icon": "compass"
+            },
+            {
+              "text": "Ask someone to explain the approach and key considerations",
+              "style": "auditory",
+              "icon": "help-circle"
+            },
+            {
+              "text": "Read about best practices and study written instructions",
+              "style": "reading_writing",
+              "icon": "book"
+            },
+            {
+              "text": "Start working on it and learn by making mistakes",
+              "style": "kinesthetic",
+              "icon": "flag"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
