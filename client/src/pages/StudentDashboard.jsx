@@ -10,6 +10,7 @@ import {
     Check,
     AlertCircle,
     MessageSquare,
+    Sparkles,
 } from 'lucide-react';
 import { getMyClasses, joinClassWithCode } from '../services/classService';
 import { supabase } from '../supabaseClient';
@@ -19,6 +20,7 @@ import { formatStyleName } from '../utils/varkCalculator';
 import DiscussionBoard from '../components/DiscussionBoard';
 import StudyGroups from '../components/StudyGroups';
 import ClassMaterialsViewer from '../components/ClassMaterialsViewer';
+import VARKComparisonDemo from '../components/VARKComparisonDemo';
 
 export default function StudentDashboard() {
     const [classes, setClasses] = useState([]);
@@ -28,6 +30,7 @@ export default function StudentDashboard() {
     const [selectedClassForDiscussions, setSelectedClassForDiscussions] = useState(null);
     const [selectedClassForGroups, setSelectedClassForGroups] = useState(null);
     const [viewingClass, setViewingClass] = useState(null);
+    const [showComparisonDemo, setShowComparisonDemo] = useState(false);
 
     useEffect(() => {
         loadClasses();
@@ -170,13 +173,22 @@ export default function StudentDashboard() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="mb-12"
+                    className="mb-12 flex flex-col sm:flex-row gap-4"
                 >
                     <motion.button
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
+                        onClick={() => setShowComparisonDemo(true)}
+                        className="flex-1 px-8 py-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 hover:from-yellow-600 hover:via-orange-600 hover:to-red-600 text-white rounded-2xl shadow-lg transition-all flex items-center justify-center gap-3 font-bold text-lg animate-pulse"
+                    >
+                        <Sparkles className="w-6 h-6" />
+                        🏆 See VARK Personalization Demo
+                    </motion.button>
+                    <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
                         onClick={() => setShowJoinModal(true)}
-                        className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-2xl shadow-lg transition-all flex items-center justify-center gap-3 font-semibold text-lg"
+                        className="flex-1 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-2xl shadow-lg transition-all flex items-center justify-center gap-3 font-semibold text-lg"
                     >
                         <Plus className="w-6 h-6" />
                         Join a New Class
@@ -395,6 +407,11 @@ export default function StudentDashboard() {
                         dominantStyle={dominantStyle?.style}
                     />
                 </>
+            )}
+
+            {/* VARK Comparison Demo */}
+            {showComparisonDemo && (
+                <VARKComparisonDemo onClose={() => setShowComparisonDemo(false)} />
             )}
 
             {/* Join Class Modal */}
