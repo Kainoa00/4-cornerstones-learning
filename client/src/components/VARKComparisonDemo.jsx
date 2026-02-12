@@ -47,11 +47,11 @@ export default function VARKComparisonDemo({ onClose }) {
     const Icon = currentStudent.icon;
 
     return (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="bg-white rounded-3xl shadow-2xl max-w-7xl w-full max-h-[90vh] overflow-hidden"
+                className="bg-white rounded-3xl shadow-2xl max-w-7xl w-full my-8 flex flex-col max-h-[90vh]"
             >
                 {/* Header */}
                 <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 text-white p-8">
@@ -74,7 +74,7 @@ export default function VARKComparisonDemo({ onClose }) {
                     </p>
                 </div>
 
-                <div className="p-8">
+                <div className="p-8 overflow-y-auto flex-1">
                     {/* Student Selector */}
                     <div className="mb-8">
                         <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
